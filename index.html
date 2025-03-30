@@ -8,7 +8,7 @@
 </head>
 <body>
     <div class="container">
-        <h1>Twoje dane</h1>
+        <h1>Wpisz swoje dane</h1>
         <input type="text" id="name" placeholder="Imię">
         <input type="text" id="surname" placeholder="Nazwisko">
         <input type="text" id="pesel" placeholder="PESEL">
@@ -17,12 +17,19 @@
         <button onclick="updateCard()">Zaktualizuj kartę</button>
 
         <div class="card">
-            <h2>mDowód</h2>
-            <canvas id="photoCanvas" width="100" height="120"></canvas>
-            <p><strong>Imię:</strong> <span id="cardName"></span></p>
-            <p><strong>Nazwisko:</strong> <span id="cardSurname"></span></p>
-            <p><strong>PESEL:</strong> <span id="cardPesel"></span></p>
-            <p><strong>Data urodzenia:</strong> <span id="cardBirthdate"></span></p>
+            <div class="card-header">
+                <h2>mDowód</h2>
+                <span class="hologram">RP</span>
+            </div>
+            <div class="card-content">
+                <canvas id="photoCanvas" width="100" height="120"></canvas>
+                <div class="details">
+                    <p><strong>Imię:</strong> <span id="cardName"></span></p>
+                    <p><strong>Nazwisko:</strong> <span id="cardSurname"></span></p>
+                    <p><strong>PESEL:</strong> <span id="cardPesel"></span></p>
+                    <p><strong>Data urodzenia:</strong> <span id="cardBirthdate"></span></p>
+                </div>
+            </div>
         </div>
     </div>
     <script src="script.js"></script>
